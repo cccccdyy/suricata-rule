@@ -1,0 +1,80 @@
+# gilgil.net
+alert tcp any any -> any 80 (msg:"Access to gilgil.net via HTTP"; content:"Host: gilgil.net"; sid:1000001; rev:1;)
+alert tls any any -> any 443 (msg:"Access to gilgil.net via HTTPS"; tls.sni; content:"gilgil.net"; sid:1000002; rev:1;)
+
+# twitter.com
+alert tcp any any -> any 80 (msg:"Access to twitter.com via HTTP"; content:"Host: twitter.com"; sid:1000003; rev:1;)
+alert tls any any -> any 443 (msg:"Access to twitter.com via HTTPS"; tls.sni; content:"twitter.com"; sid:1000004; rev:1;)
+
+# dreamhack.io
+alert tcp any any -> any 80 (msg:"Access to dreamhack.io via HTTP"; content:"Host: dreamhack.io"; sid:1000005; rev:1;)
+alert tls any any -> any 443 (msg:"Access to dreamhack.io via HTTPS"; tls.sni; content:"dreamhack.io"; sid:1000006; rev:1;)
+
+# qt.io
+alert tcp any any -> any 80 (msg:"Access to qt.io via HTTP"; content:"Host: qt.io"; sid:1000007; rev:1;)
+alert tls any any -> any 443 (msg:"Access to qt.io via HTTPS"; tls.sni; content:"qt.io"; sid:1000008; rev:1;)
+
+# netflix.com
+alert tcp any any -> any 80 (msg:"Access to netflix.com via HTTP"; content:"Host: netflix.com"; sid:1000009; rev:1;)
+alert tls any any -> any 443 (msg:"Access to netflix.com via HTTPS"; tls.sni; content:"netflix.com"; sid:1000010; rev:1;)
+
+# korea.ac.kr
+alert tcp any any -> any 80 (msg:"Access to korea.ac.kr via HTTP"; content:"Host: korea.ac.kr"; sid:1000011; rev:1;)
+alert tls any any -> any 443 (msg:"Access to korea.ac.kr via HTTPS"; tls.sni; content:"korea.ac.kr"; sid:1000012; rev:1;)
+
+# google.com
+alert tcp any any -> any 80 (msg:"Access to google.com via HTTP"; content:"Host: google.com"; sid:1000013; rev:1;)
+alert tls any any -> any 443 (msg:"Access to google.com via HTTPS"; tls.sni; content:"google.com"; sid:1000014; rev:1;)
+
+# naver.com
+alert tcp any any -> any 80 (msg:"Access to naver.com via HTTP"; content:"Host: naver.com"; sid:1000015; rev:1;)
+alert tls any any -> any 443 (msg:"Access to naver.com via HTTPS"; tls.sni; content:"naver.com"; sid:1000016; rev:1;)
+
+# daum.net
+alert tcp any any -> any 80 (msg:"Access to daum.net via HTTP"; content:"Host: daum.net"; sid:1000017; rev:1;)
+alert tls any any -> any 443 (msg:"Access to daum.net via HTTPS"; tls.sni; content:"daum.net"; sid:1000018; rev:1;)
+
+# yahoo.com
+alert tcp any any -> any 80 (msg:"Access to yahoo.com via HTTP"; content:"Host: yahoo.com"; sid:1000019; rev:1;)
+alert tls any any -> any 443 (msg:"Access to yahoo.com via HTTPS"; tls.sni; content:"yahoo.com"; sid:1000020; rev:1;)
+
+# facebook.com
+alert tcp any any -> any 80 (msg:"Access to facebook.com via HTTP"; content:"Host: facebook.com"; sid:1000021; rev:1;)
+alert tls any any -> any 443 (msg:"Access to facebook.com via HTTPS"; tls.sni; content:"facebook.com"; sid:1000022; rev:1;)
+
+# instagram.com
+alert tcp any any -> any 80 (msg:"Access to instagram.com via HTTP"; content:"Host: instagram.com"; sid:1000023; rev:1;)
+alert tls any any -> any 443 (msg:"Access to instagram.com via HTTPS"; tls.sni; content:"instagram.com"; sid:1000024; rev:1;)
+
+# microsoft.com
+alert tcp any any -> any 80 (msg:"Access to microsoft.com via HTTP"; content:"Host: microsoft.com"; sid:1000025; rev:1;)
+alert tls any any -> any 443 (msg:"Access to microsoft.com via HTTPS"; tls.sni; content:"microsoft.com"; sid:1000026; rev:1;)
+
+# dropbox.com
+alert tcp any any -> any 80 (msg:"Access to dropbox.com via HTTP"; content:"Host: dropbox.com"; sid:1000027; rev:1;)
+alert tls any any -> any 443 (msg:"Access to dropbox.com via HTTPS"; tls.sni; content:"dropbox.com"; sid:1000028; rev:1;)
+
+# zoom.us
+alert tcp any any -> any 80 (msg:"Access to zoom.us via HTTP"; content:"Host: zoom.us"; sid:1000029; rev:1;)
+alert tls any any -> any 443 (msg:"Access to zoom.us via HTTPS"; tls.sni; content:"zoom.us"; sid:1000030; rev:1;)
+
+# bing.com
+alert tcp any any -> any 80 (msg:"Access to bing.com via HTTP"; content:"Host: bing.com"; sid:1000031; rev:1;)
+alert tls any any -> any 443 (msg:"Access to bing.com via HTTPS"; tls.sni; content:"bing.com"; sid:1000032; rev:1;)
+
+# spotify.com
+alert tcp any any -> any 80 (msg:"Access to spotify.com via HTTP"; content:"Host: spotify.com"; sid:1000033; rev:1;)
+alert tls any any -> any 443 (msg:"Access to spotify.com via HTTPS"; tls.sni; content:"spotify.com"; sid:1000034; rev:1;)
+
+# nate.com
+alert tcp any any -> any 80 (msg:"Access to nate.com via HTTP"; content:"Host: nate.com"; sid:1000035; rev:1;)
+alert tls any any -> any 443 (msg:"Access to nate.com via HTTPS"; tls.sni; content:"nate.com"; sid:1000036; rev:1;)
+
+# kakao.com
+alert tcp any any -> any 80 (msg:"Access to kakao.com via HTTP"; content:"Host: kakao.com"; sid:1000037; rev:1;)
+alert tls any any -> any 443 (msg:"Access to kakao.com via HTTPS"; tls.sni; content:"kakao.com"; sid:1000038; rev:1;)
+
+# coupang.com
+alert tcp any any -> any 80 (msg:"Access to coupang.com via HTTP"; content:"Host: coupang.com"; sid:1000039; rev:1;)
+alert tls any any -> any 443 (msg:"Access to coupang.com via HTTPS"; tls.sni; content:"coupang.com"; sid:1000040; rev:1;)
+
